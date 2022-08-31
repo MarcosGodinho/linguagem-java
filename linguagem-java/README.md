@@ -4,32 +4,47 @@ Revisão sobre a linguagem Java
 ## Tópicos de Estudos
 
 * [Linguagem de programação Java](01.md)
-  * Paradigmas de Programação
-	Orientada a objetos, estruturada, imperativa, genérica, funcional, reflexiva, concorrente.
+  * Paradigmas de Programação: Orientada a objetos, estruturada, imperativa, genérica, funcional, reflexiva, concorrente.
  
-  * Modelo de Tipagem de dados
+  * Modelo de Tipagem de dados: Primitivos: boolean, byte, char, short, int, long, float e double. Referência: Strings, Arrays Primitivos e Objetos.
+
+
   * Modelo de construção da Linguagem  
   * Estilo de código
   * Versões
     * Java 1.8
-      * Novas funcionalidades 
+      * Default Methods em interfaces;
+      * Lambda e Functional interfaces;
+      * Method References;
+      * Stream;
+      * Nova API de Datas.
     * Java 11
-      * Novas funcionalidades
+      * Executar arquivo Java com um único comando;
+      * Métodos java String;
+      * Sintaxe da variável local para parâmetro Lambda;
+      * Limitação de recurso;
+      * Ler e gravar String de/para aquivos.
     * Java 18
-      * Novas funcionalidades
+      * API vetorial;
+      * "Pattern matching for switch statements";
+      * UTF-8;
+      * Servidor web simples.
     * Java 19 
-      * Novas funcionalidades
-  * Conjunto de palavras reservadas
+      * API de memória e função estrangeira;
+      * Correspondência de padrões para expressões de switch;
+      * Genéricos universais.
+
+  * Conjunto de palavras reservadas: private, protected, public, abstract, class, extends, final, etc.
   * Ambiente de Desenvolvimento e Ferramentas
-    * Documentação oficial
-    * JDK
-    * IDEs
+    * Documentação oficial: https://docs.oracle.com/en/java/
+    * JDK: Java Development Kit.
+    * IDEs: VSCode, IntelliJ IDEA, eclipse.
       * Como criar um projeto Java em uma IDE
   * Mercado
     * Popularidade 
-      * Tiobe
-      * Survey da Stackoverflow 
-      * Survey da Jetbrains 
+      * Tiobe: 3 lugar, 12.40%
+      * Survey da Stackoverflow: Loved 45.75%, Dreaded: 54.25%
+      * Survey da Jetbrains: Java é a linguagem mais usadana na Coreia do Sul, China e Alemanha.
     * Vagas e salários 
       * Survey da Stackoverflow 
       * Survey da Jetbrains  
