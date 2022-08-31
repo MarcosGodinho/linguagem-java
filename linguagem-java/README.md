@@ -5,6 +5,8 @@ Revisão sobre a linguagem Java
 
 * [Linguagem de programação Java](01.md)
   * Paradigmas de Programação
+	Orientada a objetos, estruturada, imperativa, genérica, funcional, reflexiva, concorrente.
+ 
   * Modelo de Tipagem de dados
   * Modelo de construção da Linguagem  
   * Estilo de código
