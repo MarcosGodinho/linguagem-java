@@ -55,59 +55,104 @@ Revisão sobre a linguagem Java
       * Survey da Stackoverflow 
       * Survey da Jetbrains  
 * [Hello World](02.md)
-  * Estrutura mínima de um código Java
-  * Nome do arquivo e Extensão
-  * Nome da classe
-  * Método main
-  * Escrever dados no console
+  * class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+        }
+    }
+  * Nome do arquivo e Extensão: HelloWorld.java
+  * Nome da classe: HelloWorld
+  * Método main: puclic static void main(String[] args)
+  * Escrever dados no console: system.out.println("Aqui")
   * Indentação de código
-  * Delimitação de uma instrução
-  * Delimitação de bloco de instruções
+  * Delimitação de uma instrução: Com o ;
+  * Delimitação de bloco de instruções: Com }
   * Compilação e Execução via linha de comando
 * [Tipos de Dados e operadores](03.md)
-  * Tipos de Dados
-  * Declarações de variáveis
-  * Nomes válidos para variáveis e boas práticas 
-  * Atribuição de valores
+  * Tipos de Dados: Primitivos: boolean, byte, char, short, int, long, float e double. Referência: Strings, Arrays Primitivos e Objetos.
+  * Declarações de variáveis: int idade = 0; (Tipo de dado, nome da variável, sinal de =, valor da variável)
+  * Nomes válidos para variáveis e boas práticas: camelCase.
+  * Atribuição de valores: Sinal de =
   * Operadores
-    * Operadores aritméticos
-    * Operadores booleanos
-  * Conversão de tipos de dados
+    * Operadores aritméticos: Soma +, Subtração -, Multiplicação *, Divisão /, Sobra %.
+    * Operadores booleanos: Maior que >, Menor que <, Igual ==, Diferente !=, Menor ou igual <=, Maior ou igual >=
+  * Conversão de tipos de dados: To + tipo de dado. Exemplo: .ToInteger, .ToDouble
 * [Saída de Dados](04.md)
-  * Método System.out.println
-  * Método System.out.print
-  * Exibir o valor de uma variável
-  * Exibir o valor de um decimal  
+  * Método System.out.println: Imprime algo na tela, faz quebra de linha no final.
+  * Método System.out.print: Imprime mas sem quebra de linha.
+  * Exibir o valor de uma variável: System.out.println()
+  * Exibir o valor de um decimal: System.out.println()
 * Classe Math
-  * Definição
-  * Principais operações 
+  * Definição: É a classe para ajudar em programas que envolvam matemática. Possui funções para fazer raiz quadrada, PI, logaritmos, etc.
+  * Principais operações: Math.exp, Math.pow, Math.log, Math.sqrt.
 * String
-  * Concatenação de String
-  * Principais operações sobre String
-  * Comparação de String
-  * Diferença entre String e caracter
+  * Concatenação de String: variavel.concat("O que deseja concatenar")
+  * Principais operações sobre String: index.Of, equals, endsWith, contains, compareTo, lenght.
+  * Comparação de String: compareTo, compareToIgnoreCase.
+  * Diferença entre String e caracter: String é uma cadeia de caracteres.
 * Entrada de Dados
   * Classe Scanner
-    * Obter um valor inteiro
+    * Obter um valor inteiro:
+    Scanner leitor = new Scanner(System.in);
+    String x = leitor.nextInteger();
     * Obter um valor decimal
+    Scanner leitor = new Scanner(System.in);
+    String x = leitor.nextDouble();
     * Obter um valor de texto 
+     Scanner leitor = new Scanner(System.in);
+    String x = leitor.nextString();
 * Fluxo de Controle
   * Estruturas de Decisões
     * if-else-then
+    void applyBrakes() {
+        if (isMoving) {
+            currentSpeed--;
+        } else {
+            System.err.println("The bicycle has already stopped!");
+        } 
+    }
     * switch
+    class Programa{
+    public static void main (String [] args){
+        int numero = 10;
+        switch (numero){
+            case 1:
+                System.out.println("Dez");
+                break;
+            case 2:
+                System.out.println("Numero muito grande");
+                break;
+        }
+
+    }
   * Estruturas de Repetições
-    * for
-    * while
-    * do-while 
-    * Comandos break e continue
+    * for: for(declara variável; condição; resultado)
+    
+    * while: while(condição){
+        O que fazer enquanto for verdadeiro.
+    }
+    
+    * do-while: do {
+         O que fazer.  
+    } while(condição);
+    
+    * Comandos break e continue: Break para um loop. Continue vai para o proximo looping, pulando caso aconteca alguma condição.
+    
 * Arranjos e Matrizes
-  * Definição matemática
-  * Declaração de arranjos
-  * Declaração de matrizes
-  * Percorrer arranjos
+  * Definição matemática: Representação de dados em linhas e colunas.
+  * Declaração de arranjos: int vetor[tamanho];
+  * Declaração de matrizes: vetor = new int [linhas][colunas]
+  * Percorrer arranjos: for(int i = 0; i<arranjo.lenght; i++){}
   * Percorrer matrizes
     * Linha a linha
+    for(int i = 0; i<arranjo.lenght; i++){
+        for(int j= 0; j<arranjo.lenght; j++){
+        }
+    }
     * Coluna a coluna
+    for(int i = 0; i<arranjo.lenght; i++){
+        for(int j= 0; j<arranjo.lenght; j++){}
+    }
     * Em diagonal 
   * Utilizar arranjos e matrizes como parâmetros de métodos 
   * Utilizar arranjos e matrizes como retorno de métodos 
