@@ -61,20 +61,20 @@ Revisão sobre a linguagem Java
   * Método System.out.print
   * Exibir o valor de uma variável
   * Exibir o valor de um decimal  
-* Classe Math
+* [Classe Math](05.md)
   * Definição
   * Principais operações 
-* String
+* [String](06.md)
   * Concatenação de String
   * Principais operações sobre String
   * Comparação de String
   * Diferença entre String e caracter
-* Entrada de Dados
+* [Entrada de Dados](07.md)
   * Classe Scanner
     * Obter um valor inteiro
     * Obter um valor decimal
     * Obter um valor de texto 
-* 8. [Fluxo de Controle](08.md)
+* [Fluxo de Controle](08.md)
   * Estruturas de Decisões
     * if-else-then
     * switch
@@ -83,7 +83,7 @@ Revisão sobre a linguagem Java
     * while
     * do-while 
     * Comandos break e continue
-* 9. [Arranjos e Matrizes](09.md)
+* [Arranjos e Matrizes](09.md)
   * Definição matemática
   * Declaração de arranjos
   * Declaração de matrizes
@@ -94,7 +94,7 @@ Revisão sobre a linguagem Java
     * Em diagonal 
   * Utilizar arranjos e matrizes como parâmetros de métodos 
   * Utilizar arranjos e matrizes como retorno de métodos 
-* 10. Tratamento de Exceções
+* [Tratamento de Exceções](10.md)
   * Definição
   * Exceções comuns
     * Divisão por zero
@@ -105,7 +105,7 @@ Revisão sobre a linguagem Java
   * Bloco para capturar diferentes exceções 
   * Bloco finally
   * Lançar uma exceção
-* 11. Métodos estáticos
+* [Métodos estáticos](11.md)
   * Estrutura de declaração de um método estático
   * Nomes válidos e boas práticas 
   * Parâmetros 
@@ -114,7 +114,7 @@ Revisão sobre a linguagem Java
     * Disponíveis na mesma classe
     * Disponíveis em outra classe/arquivo. 
   * Recursão 
-* 12. Classe
+* [Classe](12.md)
   * Definição
     * Representação de classe e objeto na UML
     * Diferença entre classe e objeto
