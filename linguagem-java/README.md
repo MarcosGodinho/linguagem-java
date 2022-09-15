@@ -4,47 +4,30 @@ Revisão sobre a linguagem Java
 ## Tópicos de Estudos
 
 * [Linguagem de programação Java](01.md)
-  * Paradigmas de Programação: Orientada a objetos, estruturada, imperativa, genérica, funcional, reflexiva, concorrente.
- 
-  * Modelo de Tipagem de dados: Primitivos: boolean, byte, char, short, int, long, float e double. Referência: Strings, Arrays Primitivos e Objetos.
-
-
+  * Paradigmas de Programação
+  * Modelo de Tipagem de dados
   * Modelo de construção da Linguagem  
   * Estilo de código
   * Versões
     * Java 1.8
-      * Default Methods em interfaces;
-      * Lambda e Functional interfaces;
-      * Method References;
-      * Stream;
-      * Nova API de Datas.
+      * Novas funcionalidades 
     * Java 11
-      * Executar arquivo Java com um único comando;
-      * Métodos java String;
-      * Sintaxe da variável local para parâmetro Lambda;
-      * Limitação de recurso;
-      * Ler e gravar String de/para aquivos.
+      * Novas funcionalidades
     * Java 18
-      * API vetorial;
-      * "Pattern matching for switch statements";
-      * UTF-8;
-      * Servidor web simples.
+      * Novas funcionalidades
     * Java 19 
-      * API de memória e função estrangeira;
-      * Correspondência de padrões para expressões de switch;
-      * Genéricos universais.
-
-  * Conjunto de palavras reservadas: private, protected, public, abstract, class, extends, final, etc.
+      * Novas funcionalidades
+  * Conjunto de palavras reservadas
   * Ambiente de Desenvolvimento e Ferramentas
-    * Documentação oficial: https://docs.oracle.com/en/java/
-    * JDK: Java Development Kit.
-    * IDEs: VSCode, IntelliJ IDEA, eclipse.
+    * Documentação oficial
+    * JDK
+    * IDEs
       * Como criar um projeto Java em uma IDE
   * Mercado
     * Popularidade 
-      * Tiobe: 3 lugar, 12.40%
-      * Survey da Stackoverflow: Loved 45.75%, Dreaded: 54.25%
-      * Survey da Jetbrains: Java é a linguagem mais usadana na Coreia do Sul, China e Alemanha.
+      * Tiobe
+      * Survey da Stackoverflow 
+      * Survey da Jetbrains 
     * Vagas e salários 
       * Survey da Stackoverflow 
       * Survey da Jetbrains  
@@ -55,108 +38,63 @@ Revisão sobre a linguagem Java
       * Survey da Stackoverflow 
       * Survey da Jetbrains  
 * [Hello World](02.md)
-  * class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
-        }
-    }
-  * Nome do arquivo e Extensão: HelloWorld.java
-  * Nome da classe: HelloWorld
-  * Método main: puclic static void main(String[] args)
-  * Escrever dados no console: system.out.println("Aqui")
+  * Estrutura mínima de um código Java
+  * Nome do arquivo e Extensão
+  * Nome da classe
+  * Método main
+  * Escrever dados no console
   * Indentação de código
-  * Delimitação de uma instrução: Com o ;
-  * Delimitação de bloco de instruções: Com }
+  * Delimitação de uma instrução
+  * Delimitação de bloco de instruções
   * Compilação e Execução via linha de comando
 * [Tipos de Dados e operadores](03.md)
-  * Tipos de Dados: Primitivos: boolean, byte, char, short, int, long, float e double. Referência: Strings, Arrays Primitivos e Objetos.
-  * Declarações de variáveis: int idade = 0; (Tipo de dado, nome da variável, sinal de =, valor da variável)
-  * Nomes válidos para variáveis e boas práticas: camelCase.
-  * Atribuição de valores: Sinal de =
+  * Tipos de Dados
+  * Declarações de variáveis
+  * Nomes válidos para variáveis e boas práticas 
+  * Atribuição de valores
   * Operadores
-    * Operadores aritméticos: Soma +, Subtração -, Multiplicação *, Divisão /, Sobra %.
-    * Operadores booleanos: Maior que >, Menor que <, Igual ==, Diferente !=, Menor ou igual <=, Maior ou igual >=
-  * Conversão de tipos de dados: To + tipo de dado. Exemplo: .ToInteger, .ToDouble
+    * Operadores aritméticos
+    * Operadores booleanos
+  * Conversão de tipos de dados
 * [Saída de Dados](04.md)
-  * Método System.out.println: Imprime algo na tela, faz quebra de linha no final.
-  * Método System.out.print: Imprime mas sem quebra de linha.
-  * Exibir o valor de uma variável: System.out.println()
-  * Exibir o valor de um decimal: System.out.println()
+  * Método System.out.println
+  * Método System.out.print
+  * Exibir o valor de uma variável
+  * Exibir o valor de um decimal  
 * Classe Math
-  * Definição: É a classe para ajudar em programas que envolvam matemática. Possui funções para fazer raiz quadrada, PI, logaritmos, etc.
-  * Principais operações: Math.exp, Math.pow, Math.log, Math.sqrt.
+  * Definição
+  * Principais operações 
 * String
-  * Concatenação de String: variavel.concat("O que deseja concatenar")
-  * Principais operações sobre String: index.Of, equals, endsWith, contains, compareTo, lenght.
-  * Comparação de String: compareTo, compareToIgnoreCase.
-  * Diferença entre String e caracter: String é uma cadeia de caracteres.
+  * Concatenação de String
+  * Principais operações sobre String
+  * Comparação de String
+  * Diferença entre String e caracter
 * Entrada de Dados
   * Classe Scanner
-    * Obter um valor inteiro:
-    Scanner leitor = new Scanner(System.in);
-    String x = leitor.nextInteger();
+    * Obter um valor inteiro
     * Obter um valor decimal
-    Scanner leitor = new Scanner(System.in);
-    String x = leitor.nextDouble();
     * Obter um valor de texto 
-     Scanner leitor = new Scanner(System.in);
-    String x = leitor.nextString();
-* Fluxo de Controle
+* 8. [Fluxo de Controle](08.md)
   * Estruturas de Decisões
     * if-else-then
-    void applyBrakes() {
-        if (isMoving) {
-            currentSpeed--;
-        } else {
-            System.err.println("The bicycle has already stopped!");
-        } 
-    }
     * switch
-    class Programa{
-    public static void main (String [] args){
-        int numero = 10;
-        switch (numero){
-            case 1:
-                System.out.println("Dez");
-                break;
-            case 2:
-                System.out.println("Numero muito grande");
-                break;
-        }
-
-    }
   * Estruturas de Repetições
-    * for: for(declara variável; condição; resultado)
-    
-    * while: while(condição){
-        O que fazer enquanto for verdadeiro.
-    }
-    
-    * do-while: do {
-         O que fazer.  
-    } while(condição);
-    
-    * Comandos break e continue: Break para um loop. Continue vai para o proximo looping, pulando caso aconteca alguma condição.
-    
-* Arranjos e Matrizes
-  * Definição matemática: Representação de dados em linhas e colunas.
-  * Declaração de arranjos: int vetor[tamanho];
-  * Declaração de matrizes: vetor = new int [linhas][colunas]
-  * Percorrer arranjos: for(int i = 0; i<arranjo.lenght; i++){}
+    * for
+    * while
+    * do-while 
+    * Comandos break e continue
+* 9. [Arranjos e Matrizes](09.md)
+  * Definição matemática
+  * Declaração de arranjos
+  * Declaração de matrizes
+  * Percorrer arranjos
   * Percorrer matrizes
     * Linha a linha
-    for(int i = 0; i<arranjo.lenght; i++){
-        for(int j= 0; j<arranjo.lenght; j++){
-        }
-    }
     * Coluna a coluna
-    for(int i = 0; i<arranjo.lenght; i++){
-        for(int j= 0; j<arranjo.lenght; j++){}
-    }
     * Em diagonal 
   * Utilizar arranjos e matrizes como parâmetros de métodos 
   * Utilizar arranjos e matrizes como retorno de métodos 
-* Tratamento de Exceções
+* 10. Tratamento de Exceções
   * Definição
   * Exceções comuns
     * Divisão por zero
@@ -167,7 +105,7 @@ Revisão sobre a linguagem Java
   * Bloco para capturar diferentes exceções 
   * Bloco finally
   * Lançar uma exceção
-* Métodos estáticos
+* 11. Métodos estáticos
   * Estrutura de declaração de um método estático
   * Nomes válidos e boas práticas 
   * Parâmetros 
@@ -176,7 +114,7 @@ Revisão sobre a linguagem Java
     * Disponíveis na mesma classe
     * Disponíveis em outra classe/arquivo. 
   * Recursão 
-* Classe
+* 12. Classe
   * Definição
     * Representação de classe e objeto na UML
     * Diferença entre classe e objeto
@@ -193,7 +131,7 @@ Revisão sobre a linguagem Java
     * Privado 
   * Sobrecarga de métodos
   * Sobrecarga de construtores
-* Pacotes 
+* 13. Pacotes 
   * Definição
      * Representação de pacotes na UML
   * Definição de um pacote em uma classe
@@ -323,31 +261,3 @@ Revisão sobre a linguagem Java
       * Representação na UML
     * DAO para manipular dados de uma tabela   
       * Representação na UML
-
-## Listas de Exercícios
-
-[SCHEIBEL, Glaucio. Exercícios de Programação](https://github.com/glaucioscheibel/exercicios)
-
-[Beecrowd](https://www.beecrowd.com.br/judge/pt/)
-
-[Leetcode](https://leetcode.com)
-
-[HackerRank](https://www.hackerrank.com)
-
-[Exercism](https://exercism.org/tracks/java)
-
-
-
-## Referências Bibliográficas
-
-FURGERI, SÉRGIO. Java 8 Ensino Didático: Desenvolvimento e Implementação de Aplicações. Saraiva Educação SA, 2018.
-
-Schildt, Herbert. Java para iniciantes. Bookman Editora, 2015.
-
-Finegan, Edward, and Robert Liguori. OCA Java SE 8: Guia de Estudos para o Exame 1Z0-808. Bookman Editora, 2018.
-
-Bloch, Joshua. Java Efetivo: 3a edição. Alta Books Editora, 2019.
-
-Martin, Robert C. Código limpo: habilidades práticas do Agile software. Alta Books, 2019.
-
-Fowler, Martin. UML Essencial: um breve guia para linguagem padrão. Bookman editora, 2014.
